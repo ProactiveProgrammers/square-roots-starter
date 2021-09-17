@@ -2,11 +2,9 @@
 
 from pyinstrument import Profiler  # type: ignore
 
-from typing import Iterable
 from typing import Tuple
 
 from enum import Enum
-from pathlib import Path
 
 import typer
 
