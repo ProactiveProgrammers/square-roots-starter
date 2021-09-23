@@ -11,7 +11,7 @@ After cloning this repository to your computer, please take the following steps:
 - Install the dependencies for the project by typing `poetry install`
 - Run the program in with both algorithms by typing:
   - `poetry run squareroot --number 25 --approach exhaustive`
-  - `poetry run squareroot --number 25 --approach exhastive --profile`
+  - `poetry run squareroot --number 25 --approach exhaustive --profile`
   - Please note that the program will not work unless you add the required source code
   - Please refer to the `writing/reflection.md` file for all of the ways to run the program
 - Confirm that the program is producing the expected output
