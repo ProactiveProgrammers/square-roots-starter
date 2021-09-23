@@ -18,7 +18,7 @@ TODO: Make sure that you pick a sufficiently large and representative input valu
 TODO: Provide the specific command that you ran to produce this output
 TODO: Use a fenced code block to provide the output for this command.
 
-- `poetry run primality --number 49979687 --approach efficient --profile`
+- `poetry run squareroot --number 25000 --approach exhaustive --profile`
 
 #### One output from running the efficient algorithm
 
