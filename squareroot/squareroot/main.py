@@ -82,7 +82,7 @@ def compute_square_root_efficient(
 
 
 @cli.command()
-def primality(
+def squareroot(
     number: int = typer.Option(5),
     profile: bool = typer.Option(False),
     approach: SquareRootCalculationingApproach = SquareRootCalculationingApproach.efficient,
