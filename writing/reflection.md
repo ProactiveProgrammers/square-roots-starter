@@ -1,5 +1,10 @@
 # Square Root Computation
 
+TODO: Make sure that you delete all of the TODO markers inside of this file. You
+should also ensure that you revise or delete all of the prompts inside of this
+file so that, when you are finished with your technical writing you have a
+professional report that is suitable for publication on your web site.
+
 ## Add Your Name Here
 
 ## Program Output
@@ -17,6 +22,8 @@ TODO: Make sure that you pick a sufficiently large and representative input valu
 
 TODO: Provide the specific command that you ran to produce this output
 TODO: Use a fenced code block to provide the output for this command.
+TODO: Please remember that the input of `25000` is only a suggestion;
+you need to find a sufficiently large and representative input value for your program
 
 - `poetry run squareroot --number 25000 --approach exhaustive --profile`
 
@@ -24,6 +31,8 @@ TODO: Use a fenced code block to provide the output for this command.
 
 TODO: Provide the specific command that you ran to produce this output
 TODO: Use a fenced code block to provide the output for this command.
+TODO: Please remember that the input of `25000` is only a suggestion;
+you need to find a sufficiently large and representative input value for your program
 
 - `poetry run squareroot --number 25000 --approach efficient --profile`
 
