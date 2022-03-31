@@ -94,10 +94,18 @@ def squareroot(
     square_root_tuple: Tuple[bool, float, int] = (False, 0.0, 0)
     # use the efficient square root computation algorithm
     if approach.value == SquareRootCalculationingApproach.efficient:
+        # TODO: use conditional logic to handle both of these cases
+        # TODO: make sure to carefully review the project description on
+        # the Proactive Programmers web site for a detailed discussion
+        # of these steps
         # TODO: perform profiling on the execution of the square root computation
         # TODO: do not perform profiling
     # use the exhaustive square root computation algorithm
     elif approach.value == SquareRootCalculationingApproach.exhaustive:
+        # TODO: use conditional logic to handle both of these cases
+        # TODO: make sure to carefully review the project description on
+        # the Proactive Programmers web site for a detailed discussion
+        # of these steps
         # TODO: perform profiling on the execution of the square root computation
         # TODO: do not perform profiling
     # display the results of the square root computation
