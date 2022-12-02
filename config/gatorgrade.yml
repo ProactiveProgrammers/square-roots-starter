@@ -1,5 +1,5 @@
 setup: |
-  cd compare && poetry install
+  cd squareroot && poetry install
   echo "Done installing project dependencies!"
 ---
 
@@ -9,12 +9,28 @@ setup: |
 # that there is no history associated with running the commands and
 # thus multiple commands must be run in a single chain.
 
-# --> check the Python program
-squareroot/squareroot/main.py:
-    ConfirmFileExists
-    MatchFileFragment --fragment "TODO" --count 0 --exact
-    CountMultipleLineComments --language Python --count 6
-    CountSingleLineComments --language Python --count 25
+# perform checks on a file
+- squareroot/squareroot/main.py:
+    - description: Ensure that the main.py file exists in the squareroot/squareroot/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers, and rewrite comments for main.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Create a sufficient number of docstring (i.e., multiple-line) comments in main.py
+      check: CountMultipleLineComments
+      options:
+        language: "Python"
+        count: 6
+        exact: false
+    - description: Create a sufficient number of single-line comments in main.py
+      check: CountSingleLineComments
+      options:
+        language: "Python"
+        count: 25
+        exact: false
 
 # --> check the Python program
 squareroot/tests/test_squareroot.py:
