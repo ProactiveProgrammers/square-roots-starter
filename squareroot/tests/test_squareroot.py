@@ -7,7 +7,7 @@ from squareroot import __version__
 from squareroot import main
 
 # Reference for the use of pytest.approx:
-# https://docs.pytest.org/en/6.2.x/reference.html#pytest-approx
+# https://docs.pytest.org/en/7.1.x/reference/reference.html#pytest-approx
 
 
 def test_version():
