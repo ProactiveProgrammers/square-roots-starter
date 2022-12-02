@@ -19,3 +19,4 @@ After cloning this repository to your computer, please take the following steps:
   - Performance profiling with `pyinstrument` in a Docker container may not work as expected
   - Running `poetry install` in both the Docker container and your laptop may not work as expected
 - Provide all of the required responses in the `writing/reflection.md` file
+- For more details about this project, please visit: https://proactiveprogrammers.com/data-abstraction/programming-projects/square-root/
