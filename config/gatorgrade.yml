@@ -36,8 +36,8 @@ setup: |
         exact: false
 
 # perform checks on a file
-- compare/tests/test_squareroot.py.py:
-    - description: Ensure that the test_squareroot.py.py file exists in the compare/tests/ directory
+- squareroot/tests/test_squareroot.py.py:
+    - description: Ensure that the test_squareroot.py.py file exists in the squareroot/tests/ directory
       check: ConfirmFileExists
     - description: Complete all TODOs, remove the TODO markers, and rewrite comments for test_squareroot.py.py
       check: MatchFileFragment
@@ -60,36 +60,35 @@ setup: |
 
 # run a command
 - description: Pass the source code formatting checks run by black
-  command: cd compare && poetry run task black
+  command: cd squareroot && poetry run task black
 
 # run a command
 - description: Pass the linting checks run by flake8
-  command: cd compare && poetry run task flake8
+  command: cd squareroot && poetry run task flake8
 
 # run a command
 - description: Pass the import checks run by isort
-  command: cd compare && poetry run task isort
+  command: cd squareroot && poetry run task isort
 
 # run a command
 - description: Pass the linting checks run by mypy
-  command: cd compare && poetry run task mypy
+  command: cd squareroot && poetry run task mypy
 
 # run a command
 - description: Pass the linting checks run by pydocstyle
-  command: cd compare && poetry run task pydocstyle
+  command: cd squareroot && poetry run task pydocstyle
 
 # run a command
 - description: Pass the linting checks run by pylint
-  command: cd compare && poetry run task pylint
+  command: cd squareroot && poetry run task pylint
 
 # run a command
 - description: Pass the linting checks run by pymarkdown
-  command: cd compare && poetry run task markdownlint
+  command: cd squareroot && poetry run task markdownlint
 
 # run a command
 - description: Pass all of the Pytest test cases
-  command: cd compare && poetry run task test
-
+  command: cd squareroot && poetry run task test
 
 # count number of commits in the GitHub repository
 - description: Have at least a specific minimum of commits in repository
