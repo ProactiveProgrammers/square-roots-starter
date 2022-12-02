@@ -1,8 +1,5 @@
 # Square Roots
 
-## Assigned: Thursday, March 31, 2022
-## Due: Thursday, April 7, 2022
-
 After cloning this repository to your computer, please take the following steps:
 
 - Follow the instructions on the Proactive Programmers web site for this project
