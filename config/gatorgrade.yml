@@ -9,6 +9,9 @@ setup: |
 # that there is no history associated with running the commands and
 # thus multiple commands must be run in a single chain.
 
+# NOTE: This configuration does not have all of the standardly used
+# checks for running the program through the various analysis tools.
+
 # perform checks on a file
 - squareroot/squareroot/main.py:
     - description: Ensure that the main.py file exists in the squareroot/squareroot/ directory
@@ -55,14 +58,42 @@ setup: |
         count: 3
         exact: false
 
-# --> check the technical writing for various characteristics
-writing/reflection.md:
-    ConfirmFileExists
-    CountFileWords --count 500
-    CountMarkdownTags --tag "heading" --count 14
-    CountMarkdownTags --tag "code_block" --count 4
-    MatchFileFragment --fragment "TODO" --count 0 --exact
-    MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum of commits in repository
+  check: CountCommits
+  options:
+    count: 10
 
-# --> check that the number of commits in the Git repository is beyond a threshold
-CountCommits --count 5
+# perform checks on a file
+- writing/reflection.md:
+    - description: Ensure that the reflection.md file exists in the writing/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers, and rewrite comments for the reflection
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the reflection file
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+    - description: Write a minimum number of meaningful words in the reflection
+      check: CountFileWords
+      options:
+        count: 500
+        exact: false
+    - description: Confirm that the markdown file has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 14
+        exact: false
+    - description: Confirm that the markdown file has the correct number of fenced code blocks
+      check: CountMarkdownTags
+      options:
+        tag: code_block
+        count: 4
+        exact: false
