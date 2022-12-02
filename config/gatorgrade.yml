@@ -32,12 +32,28 @@ setup: |
         count: 25
         exact: false
 
-# --> check the Python program
-squareroot/tests/test_squareroot.py:
-    ConfirmFileExists
-    MatchFileFragment --fragment "TODO" --count 0 --exact
-    MatchFileFragment --fragment "test_" --count 3 --exact
-    CountMultipleLineComments --language Python --count 4
+# perform checks on a file
+- compare/tests/test_squareroot.py.py:
+    - description: Ensure that the test_squareroot.py.py file exists in the compare/tests/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers, and rewrite comments for test_squareroot.py.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Create a sufficient number of docstring (i.e., multiple-line) comments in test_squareroot.py.py
+      check: CountMultipleLineComments
+      options:
+        language: "Python"
+        count: 3
+        exact: false
+    - description: Ensure that there are at least three test cases inside the test suite
+      check: MatchFileFragment
+      options:
+        fragment: "test_"
+        count: 3
+        exact: false
 
 # --> check the technical writing for various characteristics
 writing/reflection.md:
