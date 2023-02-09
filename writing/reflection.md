@@ -48,12 +48,12 @@ describe both (a) the trends in the data set and (b) why those trends are eviden
 #### A source code segment that performs profiling on `compute_square_root_exhaustive`
 
 TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+TODO: Write at least one paragraph to explain the requested source code
 
 #### The declaration of the default value of the `square_root_tuple`
 
 TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+TODO: Write at least one paragraph to explain the requested source code
 
 ## Professional Assessment
 
