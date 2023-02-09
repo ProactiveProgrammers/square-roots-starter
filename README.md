@@ -14,7 +14,7 @@
 If you are a student completing this project as part of a class at Allegheny
 College, please check the [Proactive Programmers Discord
 server](https://discord.gg/kjah8MFYbR) for the assignment's due date. You can
-learn more about this assignment by reading the [Square Roots](https://proactiveprogrammers.com/data-abstraction/programming-projects/square-roots/)
+learn more about this assignment by reading the [Square Roots](https://proactiveprogrammers.com/data-abstraction/programming-projects/square-root/)
 project description on the [Proactive Programmers web
 site](https://proactiveprogrammers.com). Please note that the content provided
 in the README file for this GitHub repository is an overview of the project and
