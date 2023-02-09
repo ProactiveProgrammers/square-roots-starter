@@ -20,8 +20,8 @@ profiler = Profiler()
 class SquareRootCalculationingApproach(str, Enum):
     """Define the name for the approach for calculation of the square root."""
 
-    exhaustive = "exhaustive"
-    efficient = "efficient"
+    EXHAUSTIVE = "exhaustive"
+    EFFICIENT = "efficient"
 
 
 def human_readable_boolean(answer: bool) -> str:
@@ -85,7 +85,7 @@ def compute_square_root_efficient(
 def squareroot(
     number: int = typer.Option(5),
     profile: bool = typer.Option(False),
-    approach: SquareRootCalculationingApproach = SquareRootCalculationingApproach.efficient,
+    approach: SquareRootCalculationingApproach = SquareRootCalculationingApproach.EFFICIENT,
 ) -> None:
     """Use iteration to perform square root computation of a number and then perform profiling to capture execution time."""
     # create a console for rich text output
@@ -93,7 +93,7 @@ def squareroot(
     # create an empty response from the function that computes the square root
     square_root_tuple: Tuple[bool, float, int] = (False, 0.0, 0)
     # use the efficient square root computation algorithm
-    if approach.value == SquareRootCalculationingApproach.efficient:
+    if approach.value == SquareRootCalculationingApproach.EFFICIENT:
         # TODO: use conditional logic to handle both of these cases
         # TODO: make sure to carefully review the project description on
         # the Proactive Programmers web site for a detailed discussion
@@ -101,7 +101,7 @@ def squareroot(
         # TODO: perform profiling on the execution of the square root computation
         # TODO: do not perform profiling
     # use the exhaustive square root computation algorithm
-    elif approach.value == SquareRootCalculationingApproach.exhaustive:
+    elif approach.value == SquareRootCalculationingApproach.EXHAUSTIVE:
         # TODO: use conditional logic to handle both of these cases
         # TODO: make sure to carefully review the project description on
         # the Proactive Programmers web site for a detailed discussion
