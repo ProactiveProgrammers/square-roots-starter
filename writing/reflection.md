@@ -25,16 +25,12 @@ TODO: Use a fenced code block to provide the output for this command.
 TODO: Please remember that the input of `25000` is only a suggestion;
 you need to find a sufficiently large and representative input value for your program
 
-- `poetry run squareroot --number 25000 --approach exhaustive --profile`
-
 #### One output from running the efficient algorithm
 
 TODO: Provide the specific command that you ran to produce this output
 TODO: Use a fenced code block to provide the output for this command.
 TODO: Please remember that the input of `25000` is only a suggestion;
 you need to find a sufficiently large and representative input value for your program
-
-- `poetry run squareroot --number 25000 --approach efficient --profile`
 
 ## Performance Analysis
 
