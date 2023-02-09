@@ -10,7 +10,7 @@ from squareroot import main
 # https://docs.pytest.org/en/7.1.x/reference/reference.html#pytest-approx
 
 # TODO: Write docstring comments for each of these test cases!
-
+# TODO: Make sure that you understand how these test cases work!
 
 def test_version():
     assert __version__ == "0.1.0"
